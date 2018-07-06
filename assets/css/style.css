@@ -1,0 +1,14 @@
+body {
+    background-image: url(../../assets/images/background.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.questions {
+    margin-top: 25px;
+}
+
+.question-header {
+    margin-top: 20px;
+}

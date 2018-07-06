@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="jumbotron">
+                    <h1>OVERWATCH TRIVIA</h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">Your Team Has No Tanks What Would Be The Best Pick</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Hanzo" name="Hanzo" value="answer-1" />
+                                    <label for="Hanzo">Hanzo</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="WidowMaker" name="WidowMaker" value="answer-2" />
+                                    <label for="WidowMaker">WidowMaker</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Reinhardt" name="Reinhardt" value="answer-3" />
+                                    <label for="Reinhardt">Reinhardt</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Genji" name="Genji" value="answer-4" />
+                                    <label for="Genji">Genji</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">What Hero Uses A Sword To Block Attacks</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Genji" name="Genji" value="answer-1" />
+                                    <label for="Genji">Genji</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="McCree" name="McCree" value="answer-2" />
+                                    <label for="McCree">McCree</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="D.VA" name="D.VA" value="answer-3" />
+                                    <label for="D.VA">D.VA</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="RoadHog" name="RoadHog" value="answer-4" />
+                                    <label for="RoadHog">RoadHog</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">What Hero Uses An Upgradable Turret</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Sombra" name="Sombra" value="answer-1" />
+                                    <label for="Sombra">Sombra</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Zarya" name="Zarya" value="answer-2" />
+                                    <label for="Zarya">Zarya</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Torbjorn" name="Torbjorn" value="answer-3" />
+                                    <label for="Torbjorn">Torbjorn</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Reaper" name="Reaper" value="answer-4" />
+                                    <label for="Reaper">Reaper</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">What Hero Can Freeze People</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Symmetra" name="Symmetra" value="answer-1" />
+                                    <label for="Symmetra">Symmetra</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Orisa" name="Orisa" value="answer-2" />
+                                    <label for="Orisa">Orisa</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Mei" name="Mei" value="answer-3" />
+                                    <label for="Mei">Mei</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Pharah" name="Pharah" value="answer-4" />
+                                    <label for="Pharah">Pharah</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">What Hero Can Fly</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Junkrat" name="Junkrat" value="answer-1" />
+                                    <label for="Junkrat">Junkrat</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Reaper" name="Reaper" value="answer-2" />
+                                    <label for="Reaper">Reaper</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Reaper" name="Reaper" value="answer-3" />
+                                    <label for="Reaper">Reaper</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="Reaper" name="Reaper" value="answer-4" />
+                                    <label for="Reaper">Reaper</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">question</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">question</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">question</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">question</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="question-header">question</h1>
+                            <div class="row questions">
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>question</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="assets/javascript/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
