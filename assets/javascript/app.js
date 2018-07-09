@@ -1,26 +1,47 @@
 var correctAnswers = 0;
 var timeRemaining = 60 * 1000;
 var answers = [];
-
-
-$(document).ready(function(){
-
-$(".submit").on("click", function(){
-    console.log("userGuess: " + userGuess);
-    for (i = 1; i < 10; i++){
-       var userGuess = $("input[name='question-" + i + "']:checked").val();
-       if (userGuess === "true"){
-        correctAnswers++
-        console.log(correctAnswers);
-       
+var userGuess;
+$(document).ready(function () {
+    var resetScreen = function () {
+        renderScore();
+        $("#reset-page").removeClass("hide");
+        $("#game-start").empty();
+        $("#game-start").append($("#reset-page"));
+        $(".correct").append(correctAnswers);
+        clearTimeout(timeOut);
+        clearInterval(timer);
+    }
+    function renderScore() {
+        for (i = 1; i < 11; i++) {
+            var str = "question-" + i;
+            userGuess = $("input[name='" + str + "']:checked").val();
+            console.log("user guess: " + userGuess);
+            if (userGuess === "true") {
+                correctAnswers++
+                console.log(correctAnswers);
+            }
         }
     }
-    location.href = "../Trivia-Game/assets/end.html"
-});
 
-$(".reset-btn").on("click", function(){
-    location.href = "../index.html"
-});
+    var count = 60;
+    var timer = setInterval(function () {
+        $(".time-remaining").html("Time Remaining: " + count--);
+        if (count === -1) clearInterval(timer);
+    }, 1000);
+
+
+    var timeOut = setTimeout(function () {
+        resetScreen();
+    }, timeRemaining);
+
+    $(".submit").on("click", function () {
+        resetScreen();
+    });
+
+    $(".reset-btn").on("click", function () {
+        location.reload();
+    });
 
 });
 
