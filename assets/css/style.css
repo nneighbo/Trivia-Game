@@ -32,3 +32,23 @@ h1 {
     border-width: 3px;
     border-radius: 15px;
 }
+
+
+.reset-btn {
+    margin-top: 25px;
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #e9ecef;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 15px;
+}
+
+.correct {
+    margin-top: 50px;
+    font-family: 'Teko', sans-serif;
+}

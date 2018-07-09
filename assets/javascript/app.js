@@ -5,7 +5,7 @@ var answers = [];
 
 $(document).ready(function(){
 
-$(".btn").on("click", function(){
+$(".submit").on("click", function(){
     console.log("userGuess: " + userGuess);
     for (i = 1; i < 10; i++){
        var userGuess = $("input[name='question-" + i + "']:checked").val();
@@ -15,6 +15,11 @@ $(".btn").on("click", function(){
        
         }
     }
+    location.href = "../Trivia-Game/assets/end.html"
+});
+
+$(".reset-btn").on("click", function(){
+    location.href = "../index.html"
 });
 
 });
